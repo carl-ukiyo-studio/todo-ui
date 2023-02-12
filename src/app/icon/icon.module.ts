@@ -13,10 +13,14 @@ export class IconModule {
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer
   ) {
-    this.matIconRegistry.addSvgIcon(
-      'piechart',
-      this.setPath(`${this.path}/piechart.svg`)
-    );
+    this.matIconRegistry
+      .addSvgIcon('piechart', this.setPath(`${this.path}/piechart.svg`))
+      .addSvgIcon('collection', this.setPath(`${this.path}/collection.svg`))
+      .addSvgIcon('inbox', this.setPath(`${this.path}/inbox.svg`))
+      .addSvgIcon('user', this.setPath(`${this.path}/user.svg`))
+      .addSvgIcon('shopping-bag', this.setPath(`${this.path}/shopping-bag.svg`))
+      .addSvgIcon('sign-in', this.setPath(`${this.path}/sign-in.svg`))
+      .addSvgIcon('spreadsheet', this.setPath(`${this.path}/spreadsheet.svg`));
   }
 
   private setPath(url: string) {
