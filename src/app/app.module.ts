@@ -19,6 +19,7 @@ import { NavProfileComponent } from './navigation/nav-profile/nav-profile.compon
 import { NavSidebarItemComponent } from './navigation/nav-sidebar-item/nav-sidebar-item.component';
 import { IconModule } from './icon/icon.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NavHeaderItemComponent } from './navigation/nav-header-item/nav-header-item.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HttpClientModule } from '@angular/common/http';
     NavSidebarComponent,
     NavProfileComponent,
     NavSidebarItemComponent,
+    NavHeaderItemComponent,
   ],
   imports: [
     BrowserModule,
