@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { PlaceholderContentComponent } from './placeholder-content/placeholder-content.component';
 import { NavHeaderComponent } from './navigation/nav-header/nav-header.component';
@@ -44,9 +45,10 @@ import { NavHeaderItemComponent } from './navigation/nav-header-item/nav-header-
     MatIconModule,
     MatListModule,
     IconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCheckboxModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

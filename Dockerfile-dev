@@ -1,0 +1,7 @@
+FROM node:18-alpine
+COPY package*.json ./
+RUN npm install -g @angular/cli && npm install
+USER node
+WORKDIR /app/todo-ui
+EXPOSE 4200
+CMD npm start

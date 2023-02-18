@@ -27,6 +27,9 @@ export class IconModule {
       )
       .addSvgIcon('sidebar-open', this.setPath(`${this.path}/sidebar-open.svg`))
       .addSvgIcon('tsks-logo', this.setPath(`${this.path}/tsks.svg`))
+      .addSvgIcon('chevron-left', this.setPath(`${this.path}/chevron-left.svg`))
+      .addSvgIcon('elipse', this.setPath(`${this.path}/elipse.svg`))
+      .addSvgIcon('plus-small', this.setPath(`${this.path}/plus-small.svg`))
       .addSvgIcon('folder', this.setPath(`${this.path}/folder.svg`));
   }
 
